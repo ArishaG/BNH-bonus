@@ -1,1 +1,83 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header Styling */
+h2 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+/* Rules Styling */
+#rules {
+    list-style-type: none;
+    text-align: left;
+    margin: 20px auto;
+    width: fit-content;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+/* Button Styling */
+.button-container button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-container button:hover {
+    background-color: #2980b9;
+}
+
+/* Results Styling */
+#results {
+    margin: 20px auto;
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #ccc;
+    background-color: #e8f4f8;
+}
+
+#gameResult {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#winCounter {
+    font-size: 1.2em;
+}
+
+/* Play Again Button */
+#playAgain {
+    display: none;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#playAgain:hover {
+    background-color: #229954;
+}
+
+hr {
+    width: 60%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
 
