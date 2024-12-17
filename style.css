@@ -1,83 +1,94 @@
-/* General Body Styling */
+/* General Page Styling */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f8f9fa;
     color: #333;
+    margin: 0;
+    padding: 20px;
 }
 
-/* Header Styling */
+/* Game Title */
 h2 {
     font-size: 2em;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-/* Rules Styling */
+/* Winning Conditions List */
 #rules {
-    list-style-type: none;
-    text-align: left;
     margin: 20px auto;
-    width: fit-content;
-    padding: 0;
-    font-size: 1.1em;
+    width: 50%;
+    text-align: left;
 }
 
-/* Button Styling */
-.button-container button {
-    padding: 10px 20px;
+#rules ul {
+    list-style-type: disc;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#rules h3 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+/* Buttons Styling */
+#buttons button {
     font-size: 1.2em;
     margin: 10px;
-    cursor: pointer;
-    background-color: #3498db;
+    padding: 10px 20px;
+    background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.button-container button:hover {
-    background-color: #2980b9;
+#buttons button:hover {
+    background-color: #0056b3;
 }
 
-/* Results Styling */
-#results {
+/* Game Results Box */
+.result-box {
     margin: 20px auto;
-    padding: 10px;
+    padding: 15px;
     width: 50%;
-    border: 1px solid #ccc;
-    background-color: #e8f4f8;
-}
-
-#gameResult {
+    border: 2px solid #333;
+    background-color: #f0f8ff;
     font-size: 1.5em;
     font-weight: bold;
+    color: #333;
 }
 
-#winCounter {
+/* Win Counters */
+#winCounter p {
     font-size: 1.2em;
+    margin: 10px;
 }
 
 /* Play Again Button */
 #playAgain {
-    display: none;
-    margin: 20px auto;
-    padding: 10px 20px;
+    margin: 20px;
+}
+
+#playAgain button {
     font-size: 1.2em;
-    background-color: #27ae60;
+    padding: 10px 20px;
+    background-color: #28A745;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-#playAgain:hover {
-    background-color: #229954;
+#playAgain button:hover {
+    background-color: #1e7e34;
 }
 
+/* Horizontal Rule Styling */
 hr {
     width: 60%;
     margin: 20px auto;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
 }
-
