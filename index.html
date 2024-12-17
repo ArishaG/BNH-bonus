@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bear Ninja Hunter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Bear Ninja Hunter Game</h2>
+    <hr>
+
+    <!-- Rules -->
+    <ul id="rules">
+        <li>Bear beats Ninja</li>
+        <li>Ninja beats Hunter</li>
+        <li>Hunter beats Bear</li>
+    </ul>
+    <hr>
+
+    <!-- Player choice buttons -->
+    <div class="button-container">
+        <button onclick="playGame('Bear')">Bear</button>
+        <button onclick="playGame('Ninja')">Ninja</button>
+        <button onclick="playGame('Hunter')">Hunter</button>
+    </div>
+
+    <!-- Game results -->
+    <div id="results">
+        <p id="gameResult"></p>
+        <p id="winCounter"></p>
+    </div>
+
+    <!-- Play again button -->
+    <button id="playAgain" onclick="resetGame()">Play Again</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
