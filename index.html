@@ -4,37 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bear Ninja Hunter</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- CSS file connection -->
 </head>
 <body>
     <h2>Bear Ninja Hunter Game</h2>
+
+    <!-- Winning Conditions List -->
+    <div id="rules">
+        <h3>Winning Conditions</h3>
+        <ul>
+            <li>Bear beats Ninja</li>
+            <li>Ninja beats Hunter</li>
+            <li>Hunter beats Bear</li>
+        </ul>
+    </div>
+
     <hr>
 
-    <!-- Rules -->
-    <ul id="rules">
-        <li>Bear beats Ninja</li>
-        <li>Ninja beats Hunter</li>
-        <li>Hunter beats Bear</li>
-    </ul>
-    <hr>
-
-    <!-- Player choice buttons -->
-    <div class="button-container">
+    <!-- Buttons for Game Choices -->
+    <div id="buttons">
         <button onclick="playGame('Bear')">Bear</button>
         <button onclick="playGame('Ninja')">Ninja</button>
         <button onclick="playGame('Hunter')">Hunter</button>
     </div>
 
-    <!-- Game results -->
-    <div id="results">
-        <p id="gameResult"></p>
-        <p id="winCounter"></p>
+    <hr>
+
+    <!-- Game Results -->
+    <div id="gameResult" class="result-box"></div>
+
+    <!-- Win Counters -->
+    <div id="winCounter">
+        <p>Player Wins: <span id="playerWins">0</span></p>
+        <p>Computer Wins: <span id="computerWins">0</span></p>
     </div>
 
-    <!-- Play again button -->
-    <button id="playAgain" onclick="resetGame()">Play Again</button>
+    <!-- Play Again Button -->
+    <div id="playAgain">
+        <button onclick="resetGame()">Play Again</button>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- Link to External JS -->
+    <script src="script.js"></script> <!-- JavaScript file connection -->
 </body>
 </html>
-
